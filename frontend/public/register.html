@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="text">
+      Register
+    </div>
+    <form id="registerForm">
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="firstName" name="firstName" required>
+          <div class="underline"></div>
+          <label for="firstName">First Name</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="surname" name="surname" required>
+          <div class="underline"></div>
+          <label for="surname">Surname</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="email" id="email" name="email" required>
+          <div class="underline"></div>
+          <label for="email">Email</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="idNumber" name="idNumber" required>
+          <div class="underline"></div>
+          <label for="idNumber">ID Number</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="phoneNumber" name="phoneNumber" required>
+          <div class="underline"></div>
+          <label for="phoneNumber">Phone Number</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="county" name="county" required>
+          <div class="underline"></div>
+          <label for="county">County</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="constituency" name="constituency" required>
+          <div class="underline"></div>
+          <label for="constituency">Constituency</label>
+        </div>
+        <div class="input-data">
+          <select id="gender" name="gender" required>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <!-- Add more options if needed -->
+          </select>
+          <div class="underline"></div>
+          <label for="gender">Gender</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="text" id="nextOfKin" name="nextOfKin" required>
+          <div class="underline"></div>
+          <label for="nextOfKin">Next of Kin</label>
+        </div>
+        <div class="input-data">
+          <input type="text" id="nextOfKinPhoneNumber" name="nextOfKinPhoneNumber" required>
+          <div class="underline"></div>
+          <label for="nextOfKinPhoneNumber">Next of Kin's Phone Number</label>
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="input-data">
+          <input type="password" id="password" name="password" required>
+          <div class="underline"></div>
+          <label for="password">Password</label>
+        </div>
+        <div class="input-data">
+          <input type="password" id="confirmPassword" name="confirmPassword" required>
+          <div class="underline"></div>
+          <label for="confirmPassword">Confirm Password</label>
+        </div>
+      </div>
+      <div class="form-row submit-btn">
+        <div class="input-data">
+          <div class="inner"></div>
+          <button type="submit">Register</button>
+        </div>
+      </div>
+    </form>
+    <p>Already have an account? <a href="login.html">Login</a></p>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
