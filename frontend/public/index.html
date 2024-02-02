@@ -7,8 +7,41 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="dashboard-container">
-    <!-- Display customer dashboard content here -->
+  <div class="customer-container">
+    <div class="sidenav">
+      <!-- Side Navigation -->
+      <button id="updateInfoBtn">Update Personal Information</button>
+      <button id="changeSettingsBtn">Change Account Settings</button>
+      <button id="deliveryStatusBtn">Delivery Status</button>
+      <button id="newDeliveryBtn">New Delivery</button>
+      <button id="trackingStatusBtn">Tracking Status</button>
+    </div>
+    
+    <div class="content">
+      <!-- Main Content -->
+      <div class="dashboard-container">
+        <h1>Welcome to Your Dashboard</h1>
+        <p>Manage your profile details and account settings below:</p>
+
+        <!-- Add modal for updating personal information -->
+        <div id="updateInfoModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('updateInfoModal')">&times;</span>
+            <h2>Update Personal Information</h2>
+            <!-- Add your form fields for updating personal information -->
+          </div>
+        </div>
+
+        <!-- Add modal for changing account settings -->
+        <div id="changeSettingsModal" class="modal">
+          <div class="modal-content">
+            <span class="close" onclick="closeModal('changeSettingsModal')">&times;</span>
+            <h2>Change Account Settings</h2>
+            <!-- Add your form fields for changing account settings -->
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 
   <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
